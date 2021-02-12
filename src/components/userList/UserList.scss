@@ -1,0 +1,11 @@
+.user-link {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+
+  &:active {
+    color: black;
+  }
+}

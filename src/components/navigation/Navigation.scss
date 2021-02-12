@@ -1,0 +1,20 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+
+  .navigation__link {
+    color: antiquewhite;
+    text-decoration: none;
+    padding: 3px 7px;
+    transition: 0.3s;
+    border-radius: 10px;
+
+    @media screen and (min-width: 768px) {
+      padding: 5px 10px;
+    }
+
+    &:hover {
+      background: rgb(73, 109, 175);
+    }
+  }
+}

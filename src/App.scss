@@ -1,0 +1,108 @@
+@import 'styles/NullStyles.scss';
+@import './components/header/Header.scss';
+@import './components/navigation/Navigation.scss';
+@import './components/userList/UserList.scss';
+@import './components/userDetails/UserDetails.scss';
+@import './components/addPostForm/AddPostForm.scss';
+@import './components/userTabs/UserTabs.scss';
+@import './components/userTabs/userAlbums/UserAlbums.scss';
+@import './components/userTabs/userTodos/UserTodos.scss';
+
+.app {
+  width: 100%;
+  margin-top: 20px;
+
+  .app__container {
+    width: 90%;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+      width: 80%;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  }
+}
+
+.list {
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+
+  .list__container {
+    width: 90%;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+      width: 80%;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 800;
+    }
+
+    li {
+      width: 100%;
+      max-width: 400px;
+      border: 1px solid black;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 10px auto;
+      display: flex;
+      // justify-content: space-evenly;
+      align-items: center;
+
+      &.user-li {
+        transition: 0.3s;
+      }
+
+      &.user-li:hover {
+        box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.5);
+      }
+
+      @media screen and (min-width: 768px) {
+        width: 60%;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .list__info {
+        margin-left: 20px;
+        text-align: left;
+
+        p {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  .list__home-link {
+    text-align: center;
+    margin: 20px 0;
+
+    a,
+    button {
+      color: blanchedalmond;
+      padding: 5px 10px;
+      border: 1px solid rgb(55, 80, 126);
+      border-radius: 10px;
+      font-size: 1.5rem;
+      background: cornflowerblue;
+    }
+  }
+
+  .icon {
+    font-size: 2rem;
+
+    @media screen and (min-width: 768px) {
+      margin-left: 20px;
+    }
+  }
+}

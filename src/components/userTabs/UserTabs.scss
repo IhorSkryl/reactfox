@@ -1,0 +1,44 @@
+.tabs__container {
+  width: 100%;
+  margin-top: 20px;
+
+  .tabs__content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.tabs {
+  display: flex;
+  justify-content: start;
+  border-bottom: 1px solid #b9b9b9;
+
+  .tab {
+    width: calc(100% / 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    max-width: 200px;
+    position: relative;
+    top: 1px;
+
+    @media screen and (min-width: 768px) {
+      width: 30%;
+    }
+
+    div {
+      padding: 10px;
+    }
+  }
+
+  .active {
+    border-left: 1px solid #b9b9b9;
+    border-right: 1px solid #b9b9b9;
+    border-top: 2px solid #f3b03d;
+    border-bottom: 1px solid white;
+    position: relative;
+    top: 1px;
+    z-index: 10;
+  }
+}
